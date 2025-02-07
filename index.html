@@ -7,84 +7,108 @@
     <meta name="keywards" content="Murad, Farzaliev,rezume, frontend,web">
     <meta name="description" content="Резюме Фарзалиева Мурада, джун фронтед разработчик">
     <title>Rezume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Составление резюме как примера для обучения -->
-    <img src="AZE.png" alt="Аватарка Фарзалиева Мурада" width="400px">
 
-    <h1>Фарзалиев Мурад</h1>
-    <p>Я живу в <b>России</b>,<em>Алтайский край</em>. Обучаюсь в <span
-            title="Cруктурное подразделение университа, являющееся подобим инститa. Основанно в 2013 году"><b>колледже</b></span>
-        Алтайского государственого университета. <br>
-        Я <strong>активно</strong> занмаюсь спортом и хожу в тренажерный зал. Мне <b>нравится</b> програмирование, но
-        вcегда я мечтал стать военным.</p>
+    <div class="container">
+        <div class="info">
+            <!-- Составление резюме как примера для обучения -->
+            <img src="Murad.png" alt="Аватарка Фарзалиева Мурада" class="avatar">
 
-    <h2>Список социальных сетей:</h2>
+            <div class="info-text">
+                <h1>Фарзалиев Мурад</h1>
+                <p>Я живу в <b>России</b>,<em>Алтайский край</em>. Обучаюсь в <span
+                        title="Cруктурное подразделение университа, являющееся подобим инститa. Основанно в 2013 году"><b>колледже</b></span>
+                    Алтайского государственого университета. <br>
+                    Я <strong>активно</strong> занмаюсь спортом и хожу в тренажерный зал. Мне <b>нравится</b>
+                    програмирование,
+                    но
+                    вcегда я мечтал стать военным.</p>
 
-    <a href="https://web.whatsapp.com/" target="_blank">Watsap</a>
-    |
-    <a href="https://web.telegram.org/a/" target="_blank">Telegram</a>
-    |
-    <a href="https://vk.com/aze_78" target="_blank">VK</a>
+                <h2>Список социальных сетей:</h2>
 
-    <h2>Мои хобби</h2>
-
-    <ul>
-        <li>ММА</li>
-        <li>Путишествия</li>
-        <li>Коликционирование редких монет</li>
-        <li>Прогулки с друзьями</li>
-        <li>Програмирование</li>
-    </ul>
-
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>МБОУ СОШ 63</td>
-                <td>Ученик</td>
-                <td>2017-2024</td>
-            </tr>
-            <tr>
-                <td>Мастер Комфорта</td>
-                <td>Грузчик</td>
-                <td>2024-2024</td>
-            </tr>
-            <tr>
-                <td>Колледж АлтГУ</td>
-                <td>Студент</td>
-                <td>2024-2028</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
-        </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-        <div>
-            <label for="message">Ваше Сообщение:</label>
-            <br>
-            <textarea id="message" placeholder="Введите Сообщение..." cols="30" rows="4"></textarea>
+                <a href="https://web.whatsapp.com/" target="_blank">Watsap</a>
+                |
+                <a href="https://web.telegram.org/a/" target="_blank">Telegram</a>
+                |
+                <a href="https://vk.com/aze_78" target="_blank">VK</a>
+                <hr>
+            </div>
         </div>
 
-        <button type="submit">Отправить</button>
-    </form>
+        <div class="card bg-1">
+            <h2 class="mh">Мои хобби</h2>
+
+            <ul class="lists">
+                <li>ММА</li>
+                <li>Путишествия</li>
+                <li>Коликционирование редких монет</li>
+                <li>Прогулки с друзьями</li>
+                <li>Програмирование</li>
+            </ul>
+        </div>
+
+        <div class="card bg-2">
+            <h2 class="op">Опыт работы</h2>
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td>МБОУ СОШ 63</td>
+                        <td>Ученик</td>
+                        <td>2017-2024</td>
+                    </tr>
+
+                    <tr>
+                        <td>Мастер Комфорта</td>
+                        <td>Грузчик</td>
+                        <td>2024-2024</td>
+                    </tr>
+
+                    <tr>
+                        <td>Колледж АлтГУ</td>
+                        <td>Студент</td>
+                        <td>2024-2028</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="card bg-3">
+
+            <form action="/" class="form">
+                <h2 class="sm">Связаться со мной</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше Сообщение:</label>
+                    <br>
+                    <textarea id="message" placeholder="Введите Сообщение..." cols="30" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
